@@ -11,7 +11,7 @@ import java.awt.event.MouseEvent;
 public class Ball implements GraphicElement,MouseMotionListener{
   private double radius = 0.3 ;
   private double vit = 0.02 ;
-  private double f = 0.02 ;
+  private double f = 0.01 ;
   private Vec pos, speed, direction;
   private double frict = 0.005 ;
   private GameMediator mediator;
@@ -241,3 +241,4 @@ public class Ball implements GraphicElement,MouseMotionListener{
     lastMousePos.y = currentY;
   }
 }
+
